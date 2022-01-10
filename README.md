@@ -12,4 +12,4 @@ Built with:
 * JS
 
 ## Demo
-Available soon
+Available at https://victoria-parker.github.io/airbnb-experience-clone/
