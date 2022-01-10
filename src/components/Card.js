@@ -1,4 +1,6 @@
 import React from "react";
+import star from "../images/star.png";
+
 
 export default function Card(props){
     let badgeText;
@@ -12,7 +14,7 @@ export default function Card(props){
                 { badgeText && <div className="card-badge">{badgeText}</div>}
                 <img src={`../images/${props.item.coverImg}`} alt="experience" className="experience-img"/>
                 <div className="star-div">
-                    <img src={"../images/star.png"} alt="star" className="star"/>
+                    <img src={star} alt="star" className="star"/>
                     <span>{props.item.stats.rating}</span>
                     <span className="gray">({props.item.stats.reviewCount})</span>
                     <span className="gray"> • {props.item.location}</span>
