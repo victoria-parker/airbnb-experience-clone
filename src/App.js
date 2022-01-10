@@ -10,22 +10,17 @@ export default function App(){
      {
          return <Card 
             key={value.id}
-            img={value.coverImg}
-            rating={value.stats.rating}
-            reviewCount={value.stats.reviewCount}
-            location={value.location}
-            title={value.title}
-            price={value.price}
-            openSpots={value.openSpots}
+            item={value}
          />
      })
+
     return(
         <div className="container">
-        <Navbar/>
-        <Hero/>
-        <section className="cards-list"> 
-        {cards}
-        </section>
+            <Navbar/>
+            <Hero/>
+            <section className="cards-list"> 
+                {cards}
+            </section>
         </div>
     )
 }
